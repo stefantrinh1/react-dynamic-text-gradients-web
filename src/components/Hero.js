@@ -42,6 +42,7 @@ const Container = styled.div`
   justify-content: center;
   background-color: black;
   overflow: hidden;
+  width: 100%;
   min-height: 100vh;
 
   @media only screen and (min-width: 767px) {
