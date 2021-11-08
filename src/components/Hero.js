@@ -16,7 +16,7 @@ export default function Hero() {
             'green',
             'orange',
           ]}
-          style={{ fontSize: '5rem', fontFamily: 'sans-serif' }}
+          style={{ fontFamily: 'sans-serif' }}
           className={'gradient-title'}
           gradientAngle={120}
         />
@@ -44,9 +44,14 @@ const Container = styled.div`
   overflow: hidden;
   width: 100%;
   min-height: 100vh;
-
+  .gradient-title {
+    font-size: 2.5rem;
+  }
   @media only screen and (min-width: 767px) {
     flex-direction: row;
+    .gradient-title {
+      font-size: 4rem;
+    }
   }
 `;
 

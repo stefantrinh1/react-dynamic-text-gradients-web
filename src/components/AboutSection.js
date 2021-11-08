@@ -1,10 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import TextGradient from 'react-dynamic-text-gradients';
 
 export default function AboutSection() {
   return (
     <Container>
-      <h2>Make your Website/App More accessible.</h2>
+      <TextGradient
+        text={'Make your Website/App More accessible.'}
+        as={'h2'}
+        colors={['black', '#202020', 'gold', 'black', 'orange']}
+        style={{ fontFamily: 'sans-serif' }}
+        className={'gradient-title'}
+        gradientAngle={120}
+      />
       <h4>An Accesibility Widget for React Apps/Websites.</h4>
       <p>
         The widget allows users to change the UI design/styling across the

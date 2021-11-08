@@ -1,10 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import TextGradient from 'react-dynamic-text-gradients';
 
 export default function Installation() {
   return (
     <Container>
-      <h2>Installation</h2>
+      <TextGradient
+        text={'Installation'}
+        as={'h2'}
+        colors={['green', 'red', 'gold', 'pink', 'orange']}
+        style={{ fontFamily: 'sans-serif' }}
+        className={'gradient-title'}
+        gradientAngle={120}
+      />
       <h4>Available on the NPM Registry</h4>
       <p>In the command prompt run:</p>
       <code>npm install react-dynamic-text-gradient --save</code>
@@ -19,7 +27,7 @@ const Container = styled.div`
   padding: 2rem 1rem;
   width: 100%;
   h2 {
-    color: white;
+    /* color: white; */
     font-size: 3rem;
     margin: 0rem 0rem 2rem;
   }

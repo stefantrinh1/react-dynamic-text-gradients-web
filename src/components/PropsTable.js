@@ -1,10 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import TextGradient from 'react-dynamic-text-gradients';
 
 export default function PropsTable() {
   return (
     <Container>
-      <h2>Props Table</h2>
+      <TextGradient
+        text={'Props Table'}
+        as={'h2'}
+        colors={[
+          'rgb(100, 37, 160)',
+          'rgb(137, 59, 172)',
+          'red',
+          'green',
+          'orange',
+        ]}
+        style={{ fontFamily: 'sans-serif' }}
+        className={'gradient-title'}
+        gradientAngle={120}
+      />
       <h4>List of props and types for the component</h4>
 
       <table>

@@ -1,10 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import TextGradient from 'react-dynamic-text-gradients';
 
 export default function Usage() {
   return (
     <Container>
-      <h2>Usage</h2>
+      <TextGradient
+        text={'Usage'}
+        as={'h2'}
+        colors={['black', 'teal', 'red', 'white', 'white']}
+        style={{ fontFamily: 'sans-serif' }}
+        className={'gradient-title'}
+        gradientAngle={120}
+      />
       <h4>Extremely simple to use</h4>
       <p>import a single component</p>
       <code>{`import TextGradient from 'react-dynamic-text-gradients';`}</code>
