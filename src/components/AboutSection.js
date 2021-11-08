@@ -13,14 +13,11 @@ export default function AboutSection() {
         className={'gradient-title'}
         gradientAngle={120}
       />
-      <h4>An Accesibility Widget for React Apps/Websites.</h4>
+      <h4>An Text Component That Brings Your Design To Life</h4>
       <p>
-        The widget allows users to change the UI design/styling across the
-        website/app to make the platform more accessible to their needs.
-      </p>
-      <p className='special-text'>
-        i.e for users that are color blind, the widget will change text colors
-        across the whole site.
+        A Single React Text Component for standout text displays. It adds a
+        gradient to your text and adjusts the colors of the gradient as you
+        scroll for a dynamic UI Effect
       </p>
     </Container>
   );
